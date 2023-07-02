@@ -1,0 +1,268 @@
+*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.container{
+			height: 100%;
+			width: 100%;
+		}
+		.nav ul{
+			display: flex;
+			list-style-type: none;
+			justify-content: center;
+
+		}
+		.nav ul li{
+			text-decoration: none;
+			padding: 15px 20px;
+			font-size: 18px;
+			font-weight: bold;
+			/*---*/
+			position: relative;
+		}
+		/*-----from here*/        /*--------------code for hovering line*/
+		.nav ul li:after{
+			content: "";
+			position: absolute;
+			background-color: black;
+			height: 2px;
+			width: 0;
+			left: 0;
+			bottom: -10px;
+			transition: 0.3s;
+			/*cursor: pointer;*/
+		}
+		.nav ul li:hover:after{
+			width: 100%;
+			/*cursor: pointer;*/
+		}
+		/*---to here -*/
+
+		.heading h1{
+			text-align: center;
+			font-size: 50px;
+			color: white;
+			/*font-style: italic;*/
+			font-family:goudy old style;
+			/*font-family:Hagin caps medium;*/
+			background-color: black;
+		}
+		.main{
+			background-color: pink;
+			border-top-right-radius: 60px;
+			border-top-left-radius: 60px;
+
+			/*height: 100%;
+			width: 100%;*/
+		}
+		.main .top h1{
+			font-size: 100px;
+			padding-left: 400px;
+			margin-top: 120px;
+		}
+		.main .top p{
+			font-size: 30px;
+			padding-left: 850px;
+		}
+		.button a{
+			text-decoration: none;
+			font-size: 45px;
+			color: black;
+			background-color: pink;
+			border:2px solid pink;
+			border-radius: 40px;
+			padding: 20px;
+		}
+		.container .main .button a:hover{
+			transform: scale(1.25);
+			text-decoration: underline;
+		}
+		.button{
+			width: 120px;
+			padding-left: 250px;
+			margin-top: 60px;
+		}
+		 i{
+			/*background-color: black;*/
+			color: black;
+		}
+		.main2{
+			border-bottom: 20px solid pink;
+			height: 200px;
+			border-radius: 40px;
+		}
+		.main2 p{
+			/*background: linear-gradient(50deg,cyan,pink);*/
+		}
+		.main2 img{
+			width: 100%;
+			/*height: 350px;*/
+			/*background-image: "D:\bootcamp\perfume2.jpg";*/
+			/*z-index: -1;*/
+		}
+		.icon .fa{
+			font-size: 40px;
+		}
+		.nav .icon{
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-start;
+			top: 0px;
+			padding: 0px 40px;
+		}
+		.fa-shopping-cart{
+			color: black;
+			position: absolute;
+		}
+		.content h2{
+			font-size: 45px;
+			padding: 15px;
+			color: black;
+
+		}
+		.content p{
+			font-size: 18px;
+			padding: 0px 15px;
+			text-align: center;
+			font-style: italic;
+		}
+		hr{
+			/*height: 20px;*/
+		    /*width: 20px;*/
+		    /*font-weight: bold;*/
+		}
+		.images{
+			background-color: pink;
+		}
+		.images img{
+			padding: 30px 25px;
+			border-radius: 50%;
+			/*box-shadow: 1px 1px black;*/
+			/*moz-box-shadow: 0px 6px 5px black;*/
+			filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.6));
+
+		}
+		.images h1{
+			font-size: 45px;
+			/*font-family: goudy old style;*/
+			padding: 10px 15px;
+			/*font-weight: bold;*/
+		}
+		.content2, .content3{
+			display: flex;
+		}
+		.content2 img{
+			/*background-color: black;*/
+			padding: 20px;
+		}
+		.content2 p{
+			/*font-family: 'Alegreya', serif;
+            font-family: 'Shadows Into Light', cursive;*/
+            /*font-family: 'Alegreya', serif;*/
+			/*font-family: 'Great Vibes', cursive;*/
+			/*font-family: 'Marck Script', cursive;*/
+			font-family: 'Tangerine',cursive;
+			/*font-family: 'Shadows Into Light', cursive;*/
+			font-size: 80px;
+			line-height: 2.5em;   /* important command*/
+			color: black;
+			padding: 5px 10px;
+			text-anchor: all;
+			text-align: center;
+		}
+		.content2 span,.content3 span{
+			color: gold;
+			/*font-weight: bold;*/
+			text-align: center;
+			color: gold;
+			font-size: 82px;
+		}
+		.content3{
+			justify-content: flex-end;
+		}
+		.content3 p{
+			font-size: 85px;
+			padding: 5px 10px;
+			line-height: 2.5em;
+			font-family: 'Tangerine',cursive;
+			align-items: center;
+			text-align: center;   /*important line for centered text*/
+
+		}
+		.content3 img{
+			padding: 20px;
+		}
+		.bottom{
+			background-color: black;
+			display: flex;
+		}
+		.bottom ul li{
+			color: white;
+			font-family: 'Literata', serif;
+			font-size: 15px;
+			padding: 15px;
+		}
+		.bottom h2{
+			color: white;
+		}
+		.bottom ul{
+			list-style-type: none;
+		}
+		.bottom ul li{
+			color: grey;
+		}
+		.col1 li, .col2 span ,.col3 span, .col4 span{
+			font-size: 20px;
+			color: white;
+		}
+		.col1 ul li{
+			color: white !important;
+		}
+		.msg p,h2{
+			color: white;
+			line-height: 1em;
+			padding: 5px 10px;
+			justify-content: flex-end;
+		}
+		.msg {
+			/*border-right: 2px solid white;*/
+			display: flex;
+			display: table-column;
+			
+
+		}
+		.msg a{
+			text-decoration: none;
+			color: black;
+			background-color: white;
+			height: 30px;
+			width: 60px;
+			padding: 10px;
+			margin-top: 20px;
+			align-items: center;
+			padding-left: 30px;
+			padding-right: 30px;
+			justify-content: center;
+			margin: auto;
+		}
+		.icons i{
+			color: white;
+		}
+		.bottom .fa{
+			font-size: 50px;
+			padding: 10px;
+		}
+		.end{
+			background-color: black;
+			display: flex;
+			justify-content: flex-end;
+		}
+		.end i{
+			color: white;
+			align-items: flex-end;
+			padding: 5px;
+			font-size: 15px;
+		}
+		.end p{
+			color: white;
+		}
